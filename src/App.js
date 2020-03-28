@@ -42,7 +42,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <h1>Box color change</h1>
-        {/* boxcolor sets backgroundcolor and onClick calls the changeColor function */}
+        {/* boxcolor sets backgroundcolor w double squiggly brackets, and onClick calls the changeColor function */}
         <div className="boxcolor" style={{backgroundColor: this.state.color}} onClick={this.changeColor} >
           <p>CLICK ME!</p>
         </div>
