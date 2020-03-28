@@ -11,12 +11,26 @@ export default class App extends Component {
     }
   }
 
+  changeColor = () => {
+    if (this.state.color === 'blue') {
+      this.setState({
+        color: 'orange',
+        clickCounter: this.state.clickCounter+1
+      })
+    }else if (this.state.color === 'orange') {
+      this.setState({
+        color: 'blue',
+        clickCounter: this.state.clickCounter+1
+      })
+    }
+  }
+
 
   render() {
     return (
       <div className="App">
         <h1>Box color change</h1>
-        <div className="boxcolor" >
+        <div className="boxcolor" style={{backgroundColor: this.state.color}}>
           <p>CLICK ME!</p>
         </div>
       </div>
