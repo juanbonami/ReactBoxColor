@@ -3,9 +3,9 @@
   justify-content: center;
 }
 
-.colorbox {
-  width: 600px;
-  height: 600px;
+.boxcolor {
+  width: 200px;
+  height: 200px;
   transition: 0. 3s;
   
 }

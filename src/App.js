@@ -3,11 +3,12 @@ import './App.css';
 
 export default class App extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       color:'blue',
-      clickCounter: 0,
+      even: 'No its a whole number',
+      clickCounter: 0
     }
   }
 
@@ -15,14 +16,17 @@ export default class App extends Component {
     if (this.state.clickCounter%2===0) {
       this.setState({
         color: 'orange',
+        even: false,
         clickCounter: this.state.clickCounter+1
       })
     }else {
       this.setState({
         color: 'blue',
+        even: true,
         clickCounter: this.state.clickCounter+1
       })
     }
+    console.log("Click counter===>", this.state.clickCounter)
   }
 
 
