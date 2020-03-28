@@ -1,10 +1,14 @@
+// import React library
 import React, { Component } from 'react';
 import './App.css';
 
+// create a class called App that extends the class Component from the React library
 export default class App extends Component {
+  // create constructor sets state
   constructor(props) {
     super(props);
 
+    //state object
     this.state = {
       color:'blue',
       even: 'No its a whole number',
@@ -12,7 +16,9 @@ export default class App extends Component {
     }
   }
 
+  // creates arrow function called changeColors
   changeColor = () => {
+    
     if (this.state.clickCounter%2===0) {
       this.setState({
         color: 'orange',
@@ -28,7 +34,6 @@ export default class App extends Component {
     }
     console.log("Click counter===>", this.state.clickCounter)
   }
-
 
   render() {
     return (
