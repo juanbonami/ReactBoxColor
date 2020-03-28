@@ -12,12 +12,12 @@ export default class App extends Component {
   }
 
   changeColor = () => {
-    if (this.state.color === 'blue') {
+    if (this.state.clickCounter%2===0) {
       this.setState({
         color: 'orange',
         clickCounter: this.state.clickCounter+1
       })
-    }else if (this.state.color === 'orange') {
+    }else {
       this.setState({
         color: 'blue',
         clickCounter: this.state.clickCounter+1
