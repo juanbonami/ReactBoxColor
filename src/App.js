@@ -16,7 +16,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <h1>Box color change</h1>
-        <div className="boxcolor">
+        <div className="boxcolor" >
           <p>CLICK ME!</p>
         </div>
       </div>
@@ -24,4 +24,4 @@ export default class App extends Component {
   }
 }
 
-export default App;
+
