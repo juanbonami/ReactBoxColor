@@ -19,6 +19,7 @@ export default class App extends Component {
   // creates arrow function called changeColors
   changeColor = () => {
     // checks if ckickerCount is even
+    // how many times does 2 go into clickCounter? if the remainder equals 0 execute block
     if (this.state.clickCounter%2===0) {
       // changing the state by using setState method
       this.setState({
